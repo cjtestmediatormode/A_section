@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint A_SectionKit.podspec' to ensure this is a
+#  Be sure to run `pod spec lint A_section.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "A_SectionKit"
+  s.name         = "A_section"
   s.version      = "0.0.1"
   s.summary      = "ModuleA的业务组件代码"
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "ModuleA的业务组件代码，可以用私有的repo，这里只是demo说明"
 
   s.homepage     = "https://github.com/cjtestmediatormode"
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "A_sectionKit", "A_sectionKit/*.{h,m}"
-  #s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-   s.framework  = "UIKit"
+    s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
