@@ -7,7 +7,7 @@
 //
 
 #import "A_SecionViewController.h"
-#import "CTMediator+B_Secion.h"
+//#import "CTMediator+B_Secion.h"
 @interface A_SecionViewController ()
 @property (nonatomic, strong)UIButton *closeBtn;
 
@@ -46,16 +46,16 @@
     return _closeBtn;
 }
 - (void)btnClick{
-    UIViewController *con = [[CTMediator sharedInstance] B_SecionInfoWithRemid:@"希望你能喜欢我" resultBlock:^(BOOL isLike) {
-        if (isLike) {
-            [self.likeBtn setTitle:@"对方喜欢你" forState:UIControlStateNormal];
-            self.likeBtn.backgroundColor = [UIColor cyanColor];
-        }else{
-            [self.likeBtn setTitle:@"对方讨厌你" forState:UIControlStateNormal];
-            self.likeBtn.backgroundColor = [UIColor redColor];
-        }
-    }];
-    [self presentViewController:con animated:YES completion:nil];
+//    UIViewController *con = [[CTMediator sharedInstance] B_SecionInfoWithRemid:@"希望你能喜欢我" resultBlock:^(BOOL isLike) {
+//        if (isLike) {
+//            [self.likeBtn setTitle:@"对方喜欢你" forState:UIControlStateNormal];
+//            self.likeBtn.backgroundColor = [UIColor cyanColor];
+//        }else{
+//            [self.likeBtn setTitle:@"对方讨厌你" forState:UIControlStateNormal];
+//            self.likeBtn.backgroundColor = [UIColor redColor];
+//        }
+//    }];
+//    [self presentViewController:con animated:YES completion:nil];
 }
 
 -(UILabel *)displayLab{
