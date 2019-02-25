@@ -1,0 +1,16 @@
+PODS:
+  - A_section (0.1.0)
+
+DEPENDENCIES:
+  - A_section (from `../`)
+
+EXTERNAL SOURCES:
+  A_section:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  A_section: 1927ec8946979c0ac5036db91f54d1219422f2c0
+
+PODFILE CHECKSUM: 8c7c2475e619fa4f16cc3828934bab3bdb005d71
+
+COCOAPODS: 1.5.3
