@@ -1,16 +1,28 @@
 PODS:
-  - A_section (0.1.0)
+  - A_section (0.1.2):
+    - CJB_Category
+  - CJB_Category (0.1.2):
+    - CTMediator
+  - CTMediator (25)
 
 DEPENDENCIES:
   - A_section (from `../`)
+  - CJB_Category (= 0.1.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CJB_Category
+    - CTMediator
 
 EXTERNAL SOURCES:
   A_section:
     :path: "../"
 
 SPEC CHECKSUMS:
-  A_section: 1927ec8946979c0ac5036db91f54d1219422f2c0
+  A_section: 7a8778b43f80131c1cf049bfb6ea69d95e5e5228
+  CJB_Category: 16919e1055092fc007281e4284ab8b731a028c26
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
 
-PODFILE CHECKSUM: 8c7c2475e619fa4f16cc3828934bab3bdb005d71
+PODFILE CHECKSUM: 41549f91f71a3769d142a7129de0ce740c952f75
 
 COCOAPODS: 1.5.3

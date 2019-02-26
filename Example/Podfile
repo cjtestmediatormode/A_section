@@ -4,7 +4,7 @@ platform :ios, '8.0'
 
 target 'A_section_Example' do
   pod 'A_section', :path => '../'
-
+  pod 'CJB_Category' , ‘0.1.2’
   target 'A_section_Tests' do
     inherit! :search_paths
 

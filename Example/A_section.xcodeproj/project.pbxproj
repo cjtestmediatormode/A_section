@@ -66,6 +66,12 @@
 		7B9CE8814C62E150C8511E33 /* Pods-A_section_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A_section_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-A_section_Example/Pods-A_section_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E45A71E4BE79EA2289EB5104 /* A_section.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = A_section.podspec; path = ../A_section.podspec; sourceTree = "<group>"; };
+		F0A2D1012224E382001C2ACF /* Target_A_SecionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_A_SecionViewController.m; sourceTree = "<group>"; };
+		F0A2D1022224E382001C2ACF /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		F0A2D1032224E382001C2ACF /* A_SecionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_SecionViewController.h; sourceTree = "<group>"; };
+		F0A2D1042224E382001C2ACF /* Target_A_SecionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_A_SecionViewController.h; sourceTree = "<group>"; };
+		F0A2D1052224E382001C2ACF /* A_SecionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_SecionViewController.m; sourceTree = "<group>"; };
+		F0A2D1072224E382001C2ACF /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FAAE616A1E22E24D86923CE1 /* Pods_A_section_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_section_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,7 @@
 		6003F593195388D20070C39A /* Example for A_section */ = {
 			isa = PBXGroup;
 			children = (
+				F0A2D0FF2224E382001C2ACF /* A_section */,
 				6003F59C195388D20070C39A /* CJAppDelegate.h */,
 				6003F59D195388D20070C39A /* CJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +201,36 @@
 				1436F031B47D10F79D84AA88 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		F0A2D0FF2224E382001C2ACF /* A_section */ = {
+			isa = PBXGroup;
+			children = (
+				F0A2D1002224E382001C2ACF /* Classes */,
+				F0A2D1062224E382001C2ACF /* Assets */,
+			);
+			name = A_section;
+			path = ../../A_section;
+			sourceTree = "<group>";
+		};
+		F0A2D1002224E382001C2ACF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F0A2D1012224E382001C2ACF /* Target_A_SecionViewController.m */,
+				F0A2D1022224E382001C2ACF /* .gitkeep */,
+				F0A2D1032224E382001C2ACF /* A_SecionViewController.h */,
+				F0A2D1042224E382001C2ACF /* Target_A_SecionViewController.h */,
+				F0A2D1052224E382001C2ACF /* A_SecionViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F0A2D1062224E382001C2ACF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F0A2D1072224E382001C2ACF /* .gitkeep */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,12 +344,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-A_section_Example/Pods-A_section_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/A_section/A_section.framework",
+				"${BUILT_PRODUCTS_DIR}/CJB_Category/CJB_Category.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/A_section.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CJB_Category.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
